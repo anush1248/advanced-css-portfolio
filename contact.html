@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Anusha">
+    <meta name="keywords" content="Contact, Portfolio, Computer Science, Cloud Computing">
+    <meta name="author" content="Anusha">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - Anusha Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>Contact Me</h1>
+
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+<button class="theme-btn" onclick="toggleTheme()">
+    🌙 Toggle Dark Mode
+</button>
+    <hr>
+
+</header>
+
+<main>
+
+<section aria-labelledby="contact-intro">
+
+    <h2 id="contact-intro">Get In Touch</h2>
+
+    <p>
+        Thank you for visiting my portfolio. Feel free to contact me regarding projects, internships, collaborations, or learning opportunities.
+    </p>
+
+</section>
+
+<section aria-labelledby="contact-form">
+
+    <h2 id="contact-form">Contact Form</h2>
+
+    <form aria-label="Contact Form">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</section>
+
+<section aria-labelledby="contact-details">
+
+    <h2 id="contact-details">Contact Details</h2>
+
+    <p>
+        <strong>Email:</strong>
+        <a href="mailto:anushavaddineni3@gmail.com">
+            anushavaddineni3@gmail.com
+        </a>
+    </p>
+
+    <p>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/anusha-vaddineni-779398331" target="_blank">
+            LinkedIn Profile
+        </a>
+    </p>
+
+    <p>
+        <strong>Location:</strong> Chennai, India
+    </p>
+
+</section>
+
+</main>
+
+<footer>
+    <hr>
+    <p>&copy; 2026 Anusha. All Rights Reserved.</p>
+</footer>
+<script>
+function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+</body>
+</html>

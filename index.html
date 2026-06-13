@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal Portfolio Website of Anusha">
+    <meta name="keywords" content="Portfolio, Computer Science, Cloud Computing, Projects">
+    <meta name="author" content="Anusha">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anusha Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header role="banner">
+
+    <h1>Anusha Vaddineni</h1>
+<p>Cloud Computing Student | Aspiring Software Developer</p>
+
+<div class="hero-buttons">
+    <a href="projects.html">View Projects</a>
+    <a href="contact.html">Contact Me</a>
+</div>
+
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+<button class="theme-btn" onclick="toggleTheme()">
+    🌙 Toggle Dark Mode
+</button>
+    <hr>
+
+</header>
+
+<main>
+
+    <section aria-labelledby="welcome">
+
+        <h2 id="welcome">Welcome to My Portfolio</h2>
+
+        <p>
+            Hello! I am Anusha, a Computer Science and Engineering (Cloud Computing) student passionate about software development, web technologies, and cloud computing.
+        </p>
+
+        <p>
+            This portfolio showcases my technical skills, academic projects, certifications, and learning journey in the field of technology.
+        </p>
+
+        <p>
+            My goal is to develop innovative software solutions, contribute to impactful projects, and continuously enhance my technical expertise.
+        </p>
+
+    </section>
+
+    <section aria-labelledby="skills">
+
+        <h2 id="skills">Technical Skills</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">Java</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">SQL</div>
+            <div class="skill-card">Cloud Computing (Basics)</div>
+        </div>
+
+    </section>
+
+    <section aria-labelledby="highlights">
+
+        <h2 id="highlights">Project Highlights</h2>
+
+        <ul>
+            <li>Hospital Management System</li>
+            <li>Chat Application</li>
+            <li>Fake Job Detection System</li>
+        </ul>
+
+    </section>
+
+    <section aria-labelledby="certificates">
+
+        <h2 id="certificates">Certifications & Learning</h2>
+
+        <ul>
+            <li>Introduction to Cloud Computing</li>
+            <li>Java Course</li>
+            <li>AWS Summit India Online Participation</li>
+        </ul>
+
+    </section>
+
+</main>
+
+<footer>
+    <hr>
+    <p>&copy; 2026 Anusha. All Rights Reserved.</p>
+</footer>
+<script>
+function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+</body>
+
+</html>

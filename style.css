@@ -1,0 +1,292 @@
+/* ==========================
+   CSS VARIABLES
+========================== */
+
+:root{
+    --bg-color:#f1f5f9;
+    --card-color:#ffffff;
+    --text-color:#1e293b;
+    --primary:#2563eb;
+    --secondary:#3b82f6;
+    --shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.dark-mode{
+    --bg-color:#111827;
+    --card-color:#1f2937;
+    --text-color:#f9fafb;
+    --primary:#60a5fa;
+    --secondary:#93c5fd;
+}
+
+/* ==========================
+   GLOBAL
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg-color);
+    color:var(--text-color);
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+    padding:15px;
+    transition:0.3s;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+h1{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+h2{
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+h3{
+    color:var(--secondary);
+    margin-bottom:10px;
+}
+
+/* ==========================
+   NAVIGATION - FLEXBOX
+========================== */
+
+nav{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin:20px 0;
+}
+
+nav a{
+    text-decoration:none;
+    background:var(--primary);
+    color:white;
+    padding:12px;
+    border-radius:8px;
+    text-align:center;
+    transition:0.3s;
+}
+
+nav a:hover{
+    transform:scale(1.05);
+}
+
+/* ==========================
+   HERO BUTTONS
+========================== */
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.hero-buttons a{
+    background:var(--secondary);
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.hero-buttons a:hover{
+    transform:translateY(-3px);
+}
+
+/* ==========================
+   DARK MODE BUTTON
+========================== */
+
+.theme-btn{
+    margin-top:15px;
+    background:var(--secondary);
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* ==========================
+   SECTIONS
+========================== */
+
+section{
+    background:var(--card-color);
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:20px;
+    box-shadow:var(--shadow);
+    animation:fadeIn 0.8s ease;
+}
+
+/* ==========================
+   SKILLS GRID
+========================== */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+}
+
+.skill-card{
+    background:var(--primary);
+    color:white;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+}
+
+/* ==========================
+   PROJECTS GRID
+========================== */
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.project-card,
+article{
+    background:var(--card-color);
+    padding:20px;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+    transition:0.3s;
+}
+
+.project-card:hover,
+article:hover{
+    transform:translateY(-8px);
+}
+
+/* ==========================
+   FORM
+========================== */
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    background:var(--primary);
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    text-align:center;
+    margin-top:30px;
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (min-width:768px){
+
+    nav{
+        flex-direction:row;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    nav a{
+        min-width:120px;
+    }
+
+    .projects-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .skills-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    h1{
+        font-size:3rem;
+    }
+}
+
+/* ==========================
+   DESKTOP
+========================== */
+
+@media (min-width:1024px){
+
+    .projects-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .skills-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    body{
+        max-width:1200px;
+        margin:auto;
+        padding:25px;
+    }
+}
